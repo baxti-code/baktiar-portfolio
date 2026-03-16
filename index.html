@@ -1,69 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
-<meta charset="UTF-8">
-<title>Baktiar | Website Coming Soon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baktiar | Website Coming Soon</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<style>
-body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:linear-gradient(135deg,#4facfe,#00f2fe);
-  color:white;
-  text-align:center;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+        }
 
-.container{
-  background:rgba(0,0,0,0.3);
-  padding:50px;
-  border-radius:15px;
-  backdrop-filter:blur(10px);
-}
+        .container {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 50px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 90%;
+        }
 
-h1{
-  font-size:48px;
-  margin-bottom:10px;
-}
+        h1 {
+            font-size: 42px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
 
-p{
-  font-size:20px;
-  opacity:0.9;
-}
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.8;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
 
-.links{
-  margin-top:25px;
-}
+        .status {
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
 
-.links a{
-  color:white;
-  text-decoration:none;
-  margin:0 10px;
-  font-size:18px;
-  border-bottom:1px solid white;
-}
-</style>
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 28px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        /* Har bir icon uchun hover effekti */
+        .links a:hover {
+            transform: translateY(-5px);
+            opacity: 0.8;
+        }
+
+        /* Rangli hoverlar (ixtiyoriy) */
+        .fa-telegram:hover { color: #229ED9; }
+        .fa-instagram:hover { color: #E1306C; }
+        .fa-github:hover { color: #333; }
+        .fa-linkedin:hover { color: #0077b5; }
+        .fa-envelope:hover { color: #fbbc05; }
+    </style>
 </head>
-
 <body>
 
 <div class="container">
+    <h1>Baktiar</h1>
+    <p class="subtitle">Backend Developer (in progress)</p>
+    
+    <div class="status">
+        🚧 Website under development
+    </div>
 
-<h1>Baktiar</h1>
+    <div class="links">
+        <a href="https://t.me/xolmominov1" target="_blank" title="Telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
 
-<p>Backend Developer (in progress)</p>
+        <a href="https://instagram.com/bakhtiycc" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
 
-<p>🚧 My website is currently under development</p>
+        <a href="https://github.com/baxti-code" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
 
-<div class="links">
-<a href="#">GitHub</a>
-<a href="#">LinkedIn</a>
-<a href="mailto:hello@baktiar.uz">Email</a>
-</div>
+        <a href="https://linkedin.com/in/baxtiyor-developer" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
 
+        <a href="mailto:hello@baktiar.uz" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
 </div>
 
 </body>
